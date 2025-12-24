@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -558,3 +564,334 @@ header nav .icons a:nth-child(3):hover i{
 }
 
 /*End Contact Section*/
+
+
+/*Start Responsive*/
+
+.close_menu,
+header .links .logo,
+.menu_btn{
+  display: none;
+}
+
+
+@media (max-width: 1250px) {
+  .container{
+    width: 90%;
+  }
+  
+}
+
+
+@media (max-width: 1000px){
+  header nav .links{
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    width: 400px;
+    background: var(--black-color);
+    left: -400px;
+    padding: 50px 0;
+    height: 100%;
+    border-right: 1px solid var(--border-color);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+  }
+
+  header nav .links.active{
+    left: 0;
+  }
+
+
+  .close_menu{
+    display: block;
+    font-size: 28px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  header .links .logo{
+    display: block;
+    padding-left: 38%;
+  }
+  .menu_btn{
+    display: block;
+    font-size: 28px;
+
+  }
+
+
+/*Responsive home*/
+
+.hero .div_Text h4{
+  font-size: 25px;
+}
+
+.hero .div_Text h1{
+  font-size: 55px;
+}
+
+.hero .div_Text h2{
+  font-size: 55px;
+}
+
+.hero .div_Text p{
+  font-size: 16px;
+  margin: 30px auto;
+}
+
+.hero .btn{
+  font-size: 18px;
+  padding: 16px 40px;
+}
+.hero .container{
+  flex-direction: column;
+}
+.hero .div_Text{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.hero .btns{
+  justify-content: center;
+}
+
+.hero{
+  height: auto;
+}
+
+.about .container{
+  flex-direction: column;
+}
+.about .div_text{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.about .div_img{
+  width: 45%;
+}
+
+.services .boxes .box{
+  width: 47%;
+  margin-bottom: 30px;
+}
+
+.projects .project_box .text h3 a{
+  font-size: 25px;
+}
+.projects .project_box .text h4{
+  font-size: 16px;
+}
+
+.projects .project_box .text p{
+  font-size: 14px;
+}
+
+.projects .project_box .text{
+  width: calc(50% - 50px);
+  margin-left: 50px;
+}
+
+
+.contact .container{
+  flex-direction: column;
+}
+.contact .social_contact{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.contact .social_contact .links{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contact .social_contact .links a{
+  width: 50%;
+  font-size: 16px;
+}
+.contact .social_contact .links a i{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.contact form{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact .btn{
+  font-size: 16px;
+  padding: 13px 28px;
+}
+
+
+
+
+
+
+}
+
+
+@media (max-width: 500px){
+
+  .btn{
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+
+  header nav .icons i{
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  header nav .icons{
+    gap: 15px;
+    align-items: center;
+  }
+  header nav .logo img{
+    width: 80px;
+  }
+
+  header nav .links{
+    width: 100%;
+    left: -100%;
+  }
+header .links .logo{
+    display: block;
+    padding-left: 42%;
+}
+  .menu_btn{
+    margin-left: 12px;
+    margin-bottom: 7px;
+  }
+
+  .hero .div_Text h4{
+  font-size: 22px;
+}
+
+.hero .div_Text h1{
+  font-size: 40px;
+}
+
+.hero .div_Text h2{
+  font-size: 40px;
+}
+
+.hero .div_Text p{
+  font-size: 14px;
+  margin: 25px auto;
+  width: 100%;
+}
+
+.hero .btn{
+  font-size: 16px;
+  padding: 14px 30px;
+}
+
+
+.hero .div_img{
+  width: 75%;
+}
+
+.about .div_text h2{
+  font-size: 30px;
+}
+
+.about .div_text h4{
+  font-size: 20px;
+}
+
+.about .div_text p{
+  font-size: 14px;
+}
+
+.about .div_text ul li{
+  width: 100%;
+  font-size: 14px;
+}
+.about .div_img{
+  width: 85%;
+}
+
+.topsection h2{
+  font-size: 22px;
+}
+
+.services .boxes .box{
+  width: 100%;
+}
+
+
+.services .boxes .box i{
+  font-size: 50px;
+}
+
+.projects .project_box{
+  flex-direction: column;
+}
+
+
+.projects .project_box.project_box_2{
+  flex-direction: column;
+}
+
+
+.projects .project_box img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+
+.projects .project_box .text{
+  width: 100%;
+  margin-left: 0px;
+}
+
+.projects .project_box .text p{
+  margin: 20px 0 30px;
+}
+
+.projects .project_box .text h3 a{
+  font-size: 22px;
+}
+
+
+.contact .social_contact .links{
+  flex-direction: column;
+}
+.contact .social_contact .links a{
+  width: 100%;
+  font-size: 18px;
+}
+
+.projects{
+  padding-bottom: 50px;
+}
+
+.contact{
+  padding-top: 0;
+
+}
+
+.contact .topsection{
+  margin-bottom: 60px;
+}
+
+
+
+.contact form{
+  width: 100%;
+}
+
+.contact form .inputs_form input{
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+
+}
