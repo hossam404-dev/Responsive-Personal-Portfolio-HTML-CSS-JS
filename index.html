@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hossam Eldin Mohamed | Portfolio</title>
+    <title>Portfolio | Hossam el-din Mohamed</title>
     <link rel="icon" href="img/logo.png">
     <!--CSS LINKING WITH HTML-->
     <link rel="stylesheet" href="CSS/style.css">
@@ -26,25 +26,30 @@
 
 
   <!--HEADER STARTS HERE-->
-  <header id="home">
+  <header>
     <nav class="container">
       <a href="#" class="logo"><img src="img/logo.png" alt="Logo img"></a>
-      <div class="links">
-        <a href="#" class="active">Home</a>
-        <a href="#">About Me</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact Me</a>
+      <div class="links" id="links">
+        <span class="close_menu" onclick="open_close_menu()"><i class="fa-solid fa-xmark"></i></span>
+
+        <a href="#" class="logo"><img src="img/logo.png" alt="Logo img"></a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
       </div>
       <div class="icons">
         <a href="https://www.facebook.com/SAMuwurai/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://www.instagram.com/nameishossam/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/hossam-el-din-mohamed-44040031b/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        <span class="menu_btn" onclick="open_close_menu()"><i class="fa-solid fa-bars"></i></span>
+      
       </div>
     </nav>
   </header>
   <!--HEADER ENDS-->
-  <div class="hero">
+  <div class="hero" id="home">
     <div class="container">
       <div class="div_Text">
         <h4>Hello, I'm </h4>
@@ -62,7 +67,7 @@
       </div>
     </div>
   </div>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="div_text">
         <h6>About Me</h6>
@@ -85,7 +90,7 @@
     
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <div class="topsection">
         <h2>My <span>Services</span></h2>
@@ -114,9 +119,9 @@
       </div>
     </div>
   </section>
-  
-  
-  <section class="projects">
+
+
+  <section class="projects" id="projects">
     <div class="container">
       <div class="topsection">
         <h2>Explore <span>My Projects</span></h2>
@@ -193,9 +198,8 @@
             <input type="text" placeholder="Full Name" required>
 
             <input type="email" placeholder="Email Address" required>
-
-            <input type="tel" placeholder="Phone Number" required>
             
+            <input type="tel" placeholder="Phone Number" required>
             <input type="text" placeholder="Subject" required>
 
             <textarea name="" id="" rows="10" placeholder="Your Message Here ...."></textarea>
